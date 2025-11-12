@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset default styling */
 * {
     margin: 0;
     padding: 0;
@@ -6,60 +6,70 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://scontent.fceb6-4.fna.fbcdn.net/v/t1.15752-9/566457983_1997196797761094_1299267355243395150_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEa-Xg0gQFsq8RdCuQs0UfiaT4W3mqUelhpPhbeapR6WEe8au1BVpKPLmnxOWELgN10K1wpiDQ4LnOyu8ChG72U&_nc_ohc=ncduuA0nFjoQ7kNvwGbQiQn&_nc_oc=AdktvKABmF3psUb4GmBx3pna1Rjx6eRPg-7WauIRNCe8ETLQZqtAsQhNyprRNxuDO9g&_nc_zt=23&_nc_ht=scontent.fceb6-4.fna&oh=03_Q7cD3wFfPIOnvrU4hYr_FAIIbs-kILMpyVQTNdpmhHW_6ZslkA&oe=693BF0FA') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
     line-height: 1.6;
-    background-color: #f0f4f8;
-    color: #1b1f3b;
 }
 
-a {
+.overlay {
+    background: rgba(0, 0, 50, 0.7);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+nav {
+    background-color: rgba(0, 0, 80, 0.8);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #a0d8f1;
     text-decoration: none;
-    color: #1b1f3b;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
-header, nav, main, footer {
-    width: 100%;
+nav a:hover {
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+    color: #c0e0ff;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
 }
 
 .container {
     max-width: 900px;
     margin: auto;
-    padding: 1rem;
+    padding: 20px;
+    background: rgba(0, 0, 30, 0.5);
+    border-radius: 15px;
 }
 
-/* Homepage */
-.homepage {
-    height: 100vh;
-    background: url('"C:\Users\WINDOWS 10\Downloads\566457983_1997196797761094_1299267355243395150_n.jpg"') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+footer {
     text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 80, 0.8);
+    color: #a0d8f1;
 }
 
-.homepage h1 {
-    font-size: 2.5rem;
-}
-
-/* Table of Contents */
-.toc ul {
-    list-style: none;
-    padding: 1rem 0;
-}
-
-.toc li {
-    margin: 0.5rem 0;
-}
-
-.toc a {
-    font-weight: 600;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .homepage h1 {
-        font-size: 1.8rem;
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
     }
 }
