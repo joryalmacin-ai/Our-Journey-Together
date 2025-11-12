@@ -30,7 +30,7 @@ header, nav, main, footer {
 /* Homepage */
 .homepage {
     height: 100vh;
-    background: url('../images/couple_photo.jpg') no-repeat center center/cover;
+    background: url('"C:\Users\WINDOWS 10\Downloads\566457983_1997196797761094_1299267355243395150_n.jpg"') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,3 +63,4 @@ header, nav, main, footer {
         font-size: 1.8rem;
     }
 }
+
